@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald&family=Raleway:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app-container">
+      <div id="color-selection-container" class="color-selection-container">
+        <input id="seed-color" class="seed-color" type="color" />
+        <select
+          id="color-mode-selector"
+          class="mode-selector"
+          name="mode-options"
+        >
+          <option value="monochrome" selected>Monochrome</option>
+          <option value="monochrome-dark">Monochrome-Dark</option>
+          <option value="monochrome-light">Monochrome-Light</option>
+          <option value="analogic">Analogic</option>
+          <option value="complement">Complement</option>
+          <option value="analogic-complement">Analogic-Complement</option>
+          <option value="triad">Triad</option>
+        </select>
+        <button id="color-scheme-btn" class="color-scheme-btn">
+          Get Color Scheme
+        </button>
+      </div>
+      <div id="color-display-container" class="color-display-container"></div>
+      <textarea class="copied-color-popup" id="copied-color-popup"></textarea>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
